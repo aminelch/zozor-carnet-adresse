@@ -31,16 +31,24 @@ body {
     color:#181818;
 }
 .container{
-    border: 5px solid crimson;
+    /*border: 5px solid crimson;*/
     margin: 10px auto;
     width: 90%;
 }
-
-.header .brand{
-    display: block;
-    float: left;
-    border: 2px solid greenyellow;
+.header{
+    background: url('../img/separateur.png') repeat-x bottom;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
 }
+.header .brand{
+    display: flex;
+    /*border: 2px solid greenyellow;*/
+}
+
 .brand a {
     text-decoration: none;
     color:black;
@@ -50,14 +58,23 @@ body {
     font-weight: bold;
     font-size: 1.6rem;
 }
-
-.header nav{
-    float: right;
-    border: 2px solid darkgreen;
-}
 .header .main-nav{
-     list-style: none;
+     display: flex;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    margin: auto;
+    /*border: 2px solid darkgreen;*/
+
+}
+.main-nav ul{
+    list-style: none;
+}
+.main-nav li{
     display: inline-block;
+    background: crimson;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .main-nav a {
     color: inherit;
@@ -70,17 +87,51 @@ body {
     text-decoration: underline;
 }
 hr{
-  color:cyan;
+    margin-top: 10px;
+    color:cyan;
+    border: 2px;
 }
-.clearfix{
-    clear: both;
+
+
+.highlighted{
+    position: relative;
 }
-.highlighted-content img{
+.highlighted img{
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
 }
+.highlighted-description{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 0.8em;
+}
+.highlighted-description p {
+    margin: 10px;
+}
+
+.highlighted-description .btn-showmore{
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 8px;
+    background: url('../img/fond_degraderouge.png') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
 h1,h2, section{
     font-family: Dayrom, serif;
     font-weight: normal;
