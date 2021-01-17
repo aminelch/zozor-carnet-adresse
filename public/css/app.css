@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'ballpark' ;
+    src: url("../fonts/ballpark.svg") format("svg"),
+    url("../fonts/ballpark.eot") format("embedded-opentype"),
+    url("../fonts/ballpark.ttf") format("truetype"),
+    url("../fonts/ballpark.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'dayrom';
+    src: url("../fonts/dayrom.svg") format("svg"),
+    url("../fonts/dayrom.eot") format("embedded-opentype"),
+    url("../fonts/dayrom.ttf") format("truetype"),
+    url("../fonts/dayrom.woff") format("woff");
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'dayrom', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
