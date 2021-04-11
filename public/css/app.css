@@ -1,3 +1,5 @@
+/* Imports
+   ========================================================================== */
 @font-face {
   font-family: dayrom;
   src: url("../fonts/dayrom.woff") format("woff2"), url("../fonts/dayrom.eot") format("eot"), url("../fonts/dayrom.ttf") format("truetype"), url("../fonts/dayrom.svg") format("svg");
@@ -6,8 +8,31 @@
   font-family: ballpark;
   src: url("../fonts/ballpark.woff") format("woff2"), url("../fonts/ballpark.eot") format("eot"), url("../fonts/ballpark.ttf") format("truetype"), url("../fonts/ballpark.svg") format("svg");
 }
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Document
+   ========================================================================== */
 * {
   box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.3s ease-in-out;
+}
+a:hover {
+  opacity: 1;
+  text-decoration: underline;
+  color: #af5b4c;
+}
+a .active {
+  color: #af5b4c;
 }
 
 body {
@@ -26,6 +51,12 @@ h1 {
   font-family: "ballpark";
   font-size: 20px;
   font-weight: bold;
+}
+.brand a {
+  text-decoration: none;
+}
+.brand a:hover {
+  color: #cc0000;
 }
 .brand .brand__logo {
   height: 60px;
@@ -63,24 +94,6 @@ h1 {
   display: inline;
   padding: 20px 5px;
   text-transform: uppercase;
-}
-
-/***************************
-*** NAVIGATION *************
-***************************/
-a {
-  color: black;
-  text-decoration: none;
-  opacity: 0.9;
-  transition: opacity 0.3s ease-in-out;
-}
-a:hover {
-  opacity: 1;
-  text-decoration: underline;
-  color: #af5b4c;
-}
-a .active {
-  color: #af5b4c;
 }
 
 /***************************
@@ -167,9 +180,31 @@ a .active {
   width: 41px;
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: "dayrom", serif;
+  margin-top: 0;
+  grid-column: 3;
+}
 .footer .last-tweets {
-  border: 2px solid lightblue;
+  list-style: none;
+}
+.footer .pictures {
   font-size: 16px;
+}
+.footer .pictures ul {
+  list-style-type: none;
+}
+.footer .pictures ul li {
+  display: inline-block;
+  padding: 5px;
+}
+.footer .friends h2 {
+  text-transform: uppercase;
+}
+.footer .friends ul {
+  list-style-image: url("../img/ico_liensexterne.png");
 }
 
 /*# sourceMappingURL=app.css.map */

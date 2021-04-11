@@ -1,12 +1,34 @@
+/* Imports
+   ========================================================================== */
+
 @import 'vars';
 @import 'font';
+@import 'utils';
 
-
+/* Document
+   ========================================================================== */
 
 * {
     box-sizing: border-box;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+        text-decoration: underline;
+        color: $link-color;
+
+    }
+
+    .active {
+        color: $link-color;
+    }
+}
 
 
 body {
@@ -27,6 +49,15 @@ h1 {
     font-family: "ballpark";
     font-size: 20px;
     font-weight: bold;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: darken(red, 10)
+        }
+    }
+
 
     .brand__logo {
         height: 60px;
@@ -82,26 +113,7 @@ h1 {
     }
 }
 
-/***************************
-*** NAVIGATION *************
-***************************/
-a {
-    color: black;
-    text-decoration: none;
-    opacity: 0.9;
-    transition: opacity 0.3s ease-in-out;
 
-    &:hover {
-        opacity: 1;
-        text-decoration: underline;
-        color: $link-color;
-
-    }
-
-    .active {
-        color: $link-color;
-    }
-}
 
 
 
@@ -216,9 +228,40 @@ a {
 
 
 .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); //repeter 1fr pour les 3 cols 
+    font-family: "dayrom", serif;
+    margin-top: 0;
+    grid-column: 3;
 
     .last-tweets {
-        border: 2px solid lightblue;
+
+        list-style: none;
+    }
+
+    .pictures {
+        //border: 2px solid lightblue;
         font-size: 16px;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                padding: 5px;
+            }
+        }
+    }
+
+    .friends {
+        h2 {
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style-image: url('../img/ico_liensexterne.png');
+        }
+
+        // border: 2px solid rgb(209, 207, 84);
     }
 }
