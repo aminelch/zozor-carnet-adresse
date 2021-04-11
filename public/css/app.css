@@ -1,139 +1,93 @@
-/* Définition des polices personnalisées */
 @font-face {
-    font-family: 'ballpark' ;
-    src: url("../fonts/ballpark.svg") format("svg"),
-    url("../fonts/ballpark.eot") format("embedded-opentype"),
-    url("../fonts/ballpark.ttf") format("truetype"),
-    url("../fonts/ballpark.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: dayrom;
+  src: url("../fonts/dayrom.woff") format("woff2"), url("../fonts/dayrom.eot") format("eot"), url("../fonts/dayrom.ttf") format("truetype"), url("../fonts/dayrom.svg") format("svg");
 }
-
 @font-face {
-    font-family: 'dayrom';
-    src: url("../fonts/dayrom.svg") format("svg"),
-    url("../fonts/dayrom.eot") format("embedded-opentype"),
-    url("../fonts/dayrom.ttf") format("truetype"),
-    url("../fonts/dayrom.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: ballpark;
+  src: url("../fonts/ballpark.woff") format("woff2"), url("../fonts/ballpark.eot") format("eot"), url("../fonts/ballpark.ttf") format("truetype"), url("../fonts/ballpark.svg") format("svg");
 }
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background: url("../img/fond_jaune.png");
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    color:#181818;
-}
-.container{
-    /*border: 5px solid crimson;*/
-    margin: 10px auto;
-    width: 90%;
-}
-.header{
-    background: url('../img/separateur.png') repeat-x bottom;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: stretch;
-}
-.header .brand{
-    display: flex;
-    /*border: 2px solid greenyellow;*/
+  font-family: "dayrom", serif;
+  background: url("../img/fond_jaune.png") top left repeat;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.brand a {
-    text-decoration: none;
-    color:black;
-}
-.brand-title{
-    font-family: 'ballpark', serif ;
-    font-weight: bold;
-    font-size: 1.6rem;
-}
-.header .main-nav{
-     display: flex;
-    position: absolute;
-    right: 10%;
-    top: 10%;
-    margin: auto;
-    /*border: 2px solid darkgreen;*/
-
-}
-.main-nav ul{
-    list-style: none;
-}
-.main-nav li{
-    display: inline-block;
-    background: crimson;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.main-nav a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.7;
-    transition: opacity 0.3s;
-}
-.main-nav a:hover{
-    opacity: 1;
-    text-decoration: underline;
-}
-hr{
-    margin-top: 10px;
-    color:cyan;
-    border: 2px;
+h1 {
+  text-transform: uppercase;
 }
 
-
-.highlighted{
-    position: relative;
+.brand {
+  float: left;
+  font-family: "ballpark";
+  font-size: 20px;
+  font-weight: bold;
 }
-.highlighted img{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+.brand .brand__logo {
+  height: 60px;
+  width: 59px;
 }
-.highlighted-description{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    border-radius: 0 0 5px 5px;
-    background-color: rgba(24,24,24,0.8);
-    color: white;
-    font-size: 0.8em;
+.brand p {
+  margin: 0;
+  font-size: 18px;
+  font-family: "ballpark";
 }
-.highlighted-description p {
-    margin: 10px;
+.brand .brand__description {
+  margin: -3px 0 0 0;
+  font-family: "dayrom";
 }
 
-.highlighted-description .btn-showmore{
-    height: 25px;
-    position: absolute;
-    right: 5px;
-    bottom: 8px;
-    background: url('../img/fond_degraderouge.png') repeat-x;
-    border: 1px solid #760001;
-    border-radius: 5px;
-    font-size: 1.2em;
-    text-align: center;
-    padding: 3px 8px 0px 8px;
-    color: white;
-    text-decoration: none;
+.mainHeader {
+  font-family: inherit;
+  margin: 0;
+  padding: 0 0 10px 0;
+  border-bottom: 2px solid #606262;
+}
+.mainHeader ::after {
+  content: "";
+  clear: both;
 }
 
-h1,h2, section{
-    font-family: Dayrom, serif;
-    font-weight: normal;
-    text-transform: uppercase;
+.mainNav {
+  float: right;
+  padding: 30px 20px 0 0;
 }
+.mainNav ul {
+  list-style: none;
+}
+.mainNav ul li {
+  display: inline;
+  padding: 20px 5px;
+}
+
+/***************************
+*** NAVIGATION *************
+***************************/
+a {
+  color: black;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.3s ease-in-out;
+}
+a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.mainNav li {
+  text-transform: uppercase;
+}
+
+/***************************
+*** UTILS *************
+***************************/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*# sourceMappingURL=app.css.map */

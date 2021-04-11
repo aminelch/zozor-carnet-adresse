@@ -1,0 +1,137 @@
+$link-color: #af5b4c;
+$default-font-size:16px;
+
+
+@font-face {
+
+    font-family: dayrom;
+    src: url("../fonts/dayrom.woff") format("woff2"),
+        url("../fonts/dayrom.eot") format("eot"),
+        url("../fonts/dayrom.ttf") format("truetype"),
+        url("../fonts/dayrom.svg") format("svg");
+
+}
+
+
+@font-face {
+
+    font-family: ballpark;
+    src: url("../fonts/ballpark.woff") format("woff2"),
+        url("../fonts/ballpark.eot") format("eot"),
+        url("../fonts/ballpark.ttf") format("truetype"),
+        url("../fonts/ballpark.svg") format("svg");
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: "dayrom", serif;
+    background: url('../img/fond_jaune.png') top left repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.brand {
+    float: left;
+    font-family: "ballpark";
+    font-size: 20px;
+    font-weight: bold;
+
+    .brand__logo {
+        height: 60px;
+        width: 59px;
+        //border: 2px solid springgreen;
+    }
+
+    p {
+        margin: 0;
+        font-size: 18px;
+        font-family: "ballpark";
+    }
+
+    .brand__description {
+
+        margin: -3px 0 0 0;
+        font-family: "dayrom";
+    }
+
+}
+
+.mainHeader {
+    font-family: inherit;
+    margin: 0;
+    padding: 0 0 10px 0;
+    border-bottom: 2px solid #606262;
+
+    ::after {
+        content: '';
+        clear: both;
+    }
+}
+
+
+
+.mainNav {
+
+    float: right;
+    padding: 30px 20px 0 0;
+    //padding-top: 30px;
+    //padding-right: 20px;
+
+    ul {
+        list-style: none;
+
+
+        li {
+            display: inline;
+            //border: 1px solid gold;
+            padding: 20px 5px;
+        }
+
+    }
+}
+
+/***************************
+*** NAVIGATION *************
+***************************/
+a {
+    color: black;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+        text-decoration: underline;
+
+
+    }
+}
+
+.mainNav {
+
+    li {
+
+        text-transform: uppercase;
+    }
+
+}
+
+
+/***************************
+*** UTILS *************
+***************************/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
