@@ -61,6 +61,7 @@ h1 {
 .mainNav ul li {
   display: inline;
   padding: 20px 5px;
+  text-transform: uppercase;
 }
 
 /***************************
@@ -75,10 +76,99 @@ a {
 a:hover {
   opacity: 1;
   text-decoration: underline;
+  color: #af5b4c;
+}
+a .active {
+  color: #af5b4c;
 }
 
-.mainNav li {
-  text-transform: uppercase;
+/***************************
+*** BANNER *************
+***************************/
+.banner {
+  margin-top: 10px;
+  position: relative;
+  background: url(../img/sanfrancisco.jpg) no-repeat center/cover;
+  min-height: 219px;
+  width: 100%;
+}
+.banner .banner__description {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.banner .btn__highlighted {
+  position: absolute;
+  right: 10px;
+  bottom: 4px;
+  font-weight: bold;
+  padding: 8px;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  background: #9b0e10;
+  background: url(../img/fond_degraderouge.png) top left repeat;
+  opacity: 0.7;
+  transition: color opacity 0.3s ease-in;
+}
+.banner .btn__highlighted:hover {
+  opacity: 1;
+  background: #530709cd;
+}
+
+/***************************
+*** MAIN CONTENT *************
+***************************/
+.site-content {
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-family: "dayrom", serif;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+}
+.site-content h1 {
+  margin: 0;
+}
+.site-content .ico-epingle {
+  padding-right: 10px;
+  margin: 0;
+}
+.site-content .right-col {
+  background: rgba(110, 105, 98, 0.5);
+  padding-left: 10px;
+}
+.site-content .right-col h2 {
+  text-align: center;
+}
+.site-content .right-col img {
+  width: calc(100% - 50px);
+  height: auto;
+  padding: 0 25%;
+  display: inline-block;
+}
+.site-content .right-col .social-icons {
+  list-style: none;
+  padding: 0 25%;
+}
+.site-content .right-col .social-icons li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.site-content .right-col .social-icons li img {
+  height: auto;
+  width: 41px;
+}
+
+.footer .last-tweets {
+  border: 2px solid lightblue;
+  font-size: 16px;
 }
 
 /***************************
