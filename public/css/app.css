@@ -46,6 +46,32 @@ h1 {
   margin: 0;
 }
 
+/* Header & Nav
+   ========================================================================== */
+.mainHeader {
+  font-family: inherit;
+  margin: 0;
+  padding: 0 0 10px 0;
+  border-bottom: 2px solid #606262;
+}
+.mainHeader ::after {
+  content: "";
+  clear: both;
+}
+
+.mainNav {
+  float: right;
+  padding: 30px 20px 0 0;
+}
+.mainNav ul {
+  list-style: none;
+}
+.mainNav ul li {
+  display: inline;
+  padding: 20px 5px;
+  text-transform: uppercase;
+}
+
 .brand {
   float: left;
   font-family: "ballpark";
@@ -72,39 +98,11 @@ h1 {
   font-family: "dayrom";
 }
 
-.mainHeader {
-  font-family: inherit;
-  margin: 0;
-  padding: 0 0 10px 0;
-  border-bottom: 2px solid #606262;
-}
-.mainHeader ::after {
-  content: "";
-  clear: both;
-}
-
-.mainNav {
-  float: right;
-  padding: 30px 20px 0 0;
-}
-.mainNav ul {
-  list-style: none;
-}
-.mainNav ul li {
-  display: inline;
-  padding: 20px 5px;
-  text-transform: uppercase;
-}
-
-/***************************
-*** BANNER *************
-***************************/
 .banner {
-  margin-top: 10px;
   position: relative;
   background: url(../img/sanfrancisco.jpg) no-repeat center/cover;
   min-height: 219px;
-  width: 100%;
+  width: auto;
 }
 .banner .banner__description {
   position: absolute;
@@ -136,9 +134,8 @@ h1 {
   background: #530709cd;
 }
 
-/***************************
-*** MAIN CONTENT *************
-***************************/
+/* Site Content
+   ========================================================================== */
 .site-content {
   margin-top: 20px;
   padding: 5px 10px;
@@ -152,7 +149,10 @@ h1 {
   margin: 0;
 }
 .site-content .left-col {
-  border: 2px solid yellow;
+  padding: 10px;
+}
+.site-content .left-col p::first-line {
+  margin-top: 2px;
 }
 .site-content .right-col {
   background: rgba(110, 105, 98, 0.5);
@@ -180,12 +180,17 @@ h1 {
   width: 41px;
 }
 
+/* Footer
+   ========================================================================== */
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   font-family: "dayrom", serif;
   margin-top: 0;
   grid-column: 3;
+}
+.footer h2 {
+  text-transform: uppercase;
 }
 .footer .last-tweets {
   list-style: none;
@@ -199,9 +204,6 @@ h1 {
 .footer .pictures ul li {
   display: inline-block;
   padding: 5px;
-}
-.footer .friends h2 {
-  text-transform: uppercase;
 }
 .footer .friends ul {
   list-style-image: url("../img/ico_liensexterne.png");

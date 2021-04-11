@@ -42,42 +42,9 @@ h1 {
     margin: 0;
 }
 
+/* Header & Nav
+   ========================================================================== */
 
-
-.brand {
-    float: left;
-    font-family: "ballpark";
-    font-size: 20px;
-    font-weight: bold;
-
-    a {
-        text-decoration: none;
-
-        &:hover {
-            color: darken(red, 10)
-        }
-    }
-
-
-    .brand__logo {
-        height: 60px;
-        width: 59px;
-        //border: 2px solid springgreen;
-    }
-
-    p {
-        margin: 0;
-        font-size: 18px;
-        font-family: "ballpark";
-    }
-
-    .brand__description {
-
-        margin: -3px 0 0 0;
-        font-family: "dayrom";
-    }
-
-}
 
 .mainHeader {
     font-family: inherit;
@@ -113,20 +80,51 @@ h1 {
     }
 }
 
+.brand {
+    float: left;
+    font-family: "ballpark";
+    font-size: 20px;
+    font-weight: bold;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: darken(red, 10)
+        }
+    }
+
+
+    .brand__logo {
+        height: 60px;
+        width: 59px;
+
+    }
+
+    p {
+        margin: 0;
+        font-size: 18px;
+        font-family: "ballpark";
+    }
+
+    .brand__description {
+
+        margin: -3px 0 0 0;
+        font-family: "dayrom";
+    }
+
+}
 
 
 
 
-/***************************
-*** BANNER *************
-***************************/
+
 .banner {
-    margin-top: 10px;
+
     position: relative;
-    //border: 2px solid yellow;
     background: url(../img/sanfrancisco.jpg) no-repeat center / cover;
     min-height: 219px;
-    width: 100%;
+    width: auto;
 
     .banner__description {
         position: absolute;
@@ -135,7 +133,7 @@ h1 {
         left: 0;
         padding: 10px;
         width: 100%;
-        //   border: 2px solid navy;
+
         color: rgba(255, 255, 255, 0.8);
         background-color: rgba(0, 0, 0, 0.5)
     }
@@ -163,10 +161,8 @@ h1 {
     }
 }
 
-
-/***************************
-*** MAIN CONTENT *************
-***************************/
+/* Site Content
+   ========================================================================== */
 .site-content {
     margin-top: 20px;
     padding: 5px 10px;
@@ -183,12 +179,11 @@ h1 {
     }
 
     .left-col {
-        //  float: left;
-        //   top: 0;
-        //   left: 0;
-        border: 2px solid yellow;
-        //width: calc(100% - 260px);
-        //width: 60%;
+        padding: 10px;
+
+        p::first-line {
+            margin-top: 2px;
+        }
     }
 
     .right-col {
@@ -226,7 +221,8 @@ h1 {
 
 }
 
-
+/* Footer
+   ========================================================================== */
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr); //repeter 1fr pour les 3 cols 
@@ -234,13 +230,17 @@ h1 {
     margin-top: 0;
     grid-column: 3;
 
+    h2 {
+        text-transform: uppercase;
+    }
+
     .last-tweets {
 
         list-style: none;
     }
 
     .pictures {
-        //border: 2px solid lightblue;
+
         font-size: 16px;
 
         ul {
@@ -254,14 +254,9 @@ h1 {
     }
 
     .friends {
-        h2 {
-            text-transform: uppercase;
-        }
 
         ul {
             list-style-image: url('../img/ico_liensexterne.png');
         }
-
-        // border: 2px solid rgb(209, 207, 84);
     }
 }
