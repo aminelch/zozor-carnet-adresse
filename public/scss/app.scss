@@ -17,7 +17,10 @@ body {
 
 h1 {
     text-transform: uppercase;
+    margin: 0;
 }
+
+
 
 .brand {
     float: left;
@@ -158,11 +161,9 @@ a {
     font-family: "dayrom", serif;
     width: 100%;
     display: grid;
-    grid-template-columns: 2.5fr 1.5fr;
 
-    h1 {
-        margin: 0;
-    }
+    grid-template-columns: 66% 34%;
+
 
     .ico-epingle {
         padding-right: 10px;
@@ -173,7 +174,7 @@ a {
         //  float: left;
         //   top: 0;
         //   left: 0;
-        //  border: 2px solid yellow;
+        border: 2px solid yellow;
         //width: calc(100% - 260px);
         //width: 60%;
     }
@@ -220,13 +221,4 @@ a {
         border: 2px solid lightblue;
         font-size: 16px;
     }
-}
-
-/***************************
-*** UTILS *************
-***************************/
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
 }
