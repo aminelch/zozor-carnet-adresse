@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     font-family: Georgia, "DejaVu Sans Condensed", sans-serif;
     font-size: 16px;
     line-height: 1em;
@@ -26,47 +27,51 @@ a:hover {
 
 /* SITE
    ========================================================================== */
-.topbar{
+.topbar {
     border: 2px solid gold;
     font-family: "Fira Code";
     font-size: 20px;
 }
-.brand{
+
+.brand {
     float: left;
     display: block;
     width: auto;
     margin: 10px;
     padding: 28px 10px 0 20px;
-    color:darkred;
+    color: darkred;
     font-size: 40px;
     font-family: Z003;
 
 }
-.main-nav{
+
+.main-nav {
     float: right;
-    padding: 17px 0  0 10px;
-    margin:0;
+    padding: 17px 0 0 10px;
+    margin: 0;
     list-style: none;
-    border:dashed 1px darkred;
+    border: dashed 1px darkred;
 
 }
 
-.clearfix{
+.clearfix {
     content: '';
     clear: both;
     display: block;
 
 }
 
-.main-nav li{
+.main-nav li {
     padding: 20px 10px;
     display: inline-block;
     background: gold;
 }
-.main-nav a{
+
+.main-nav a {
     text-decoration: none;
     text-transform: uppercase;
 }
+
 .title-big {
     font-family: "Ubuntu Condensed";
     font-size: 40px;
@@ -76,12 +81,13 @@ a:hover {
 }
 
 .container {
-    width: 100%;
-    clear: both;
-    min-height: 1vh;
-    margin-top: 30px;
-    border: 2px solid forestgreen;
-    padding: 10px 20px 0;
+    max-width: 1000px;
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    /**margin-top: 30px;**/
+    /**border: 2px solid forestgreen;**/
+    /**padding: 10px 20px 0;**/
 }
 
 
