@@ -1,84 +1,120 @@
 /* GENERAL
    ========================================================================== */
-*{
+* {
     box-sizing: border-box;
 }
 
-html,body{
+html, body {
     font-family: Georgia, "DejaVu Sans Condensed", sans-serif;
     font-size: 16px;
     line-height: 1em;
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
-    color:forestgreen;
+    color: forestgreen;
     opacity: 0.8;
     transition: opacity 0.3s ease-in-out;
 }
-a:hover{
+
+a:hover {
     opacity: 1;
     text-decoration: underline;
 }
 
 /* SITE
    ========================================================================== */
+.topbar{
+    border: 2px solid gold;
+    font-family: "Fira Code";
+    font-size: 20px;
+}
+.brand{
+    float: left;
+    display: block;
+    width: auto;
+    margin: 10px;
+    padding: 28px 10px 0 20px;
+    color:darkred;
+    font-size: 40px;
+    font-family: Z003;
 
-.title-big{
+}
+.main-nav{
+    float: right;
+    padding: 17px 0  0 10px;
+    margin:0;
+    list-style: none;
+    border:dashed 1px darkred;
+
+}
+
+.clearfix{
+    content: '';
+    clear: both;
+    display: block;
+
+}
+
+.main-nav li{
+    padding: 20px 10px;
+    display: inline-block;
+    background: gold;
+}
+.main-nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.title-big {
     font-family: "Ubuntu Condensed";
     font-size: 40px;
     line-height: 1.2;
     margin-top: 0;
-    border:1px dotted blue;
-}
-.div1{
-    background: blue;
-    height: 100px;
-    position: relative;
-}
-.carreau{
-    position: absolute;
-    top:50%;
-    left:50%;
-    height: 50px;
-    width: 50px;
-    transform: translateX(-50%);
-    transform: translateY(-50%);
-    background: darkseagreen;
-    border: 2px solid black;
-    border-radius: 2px;
+    border: 1px dotted blue;
 }
 
-.div2{
-    background: darkred;
-    height: 100px;
-}
-
-.div3{
-    background: coral;
-    height: 100px;
-}
-
-.container{
-    width:100%;
+.container {
+    width: 100%;
+    clear: both;
     min-height: 1vh;
+    margin-top: 30px;
     border: 2px solid forestgreen;
     padding: 10px 20px 0;
 }
-.footer{
-    background: rgba(109,29,226,0.16);
-    color:black;
-    width:100%;
+
+
+.alignleft {
+    float: left;
+    border: 1px solid yellow;
+    height: 120px;
+    width: 120px;
+    margin-right: 10px;
+}
+
+.alignright {
+    float: right;
+    border: 1px solid #a1a105;
+    height: 120px;
+    width: 120px;
+    margin-left: 10px;
+
+}
+
+.footer {
+    background: rgba(109, 29, 226, 0.16);
+    color: black;
+    width: 100%;
     height: 40px;
     padding: 10px;
     margin-top: 10px;
-    position: fixed;
-    bottom: 0;
+    position: relative;
+    /*bottom: 0;*/
     font-family: "Fira Code";
 }
 
-.footer p{
+.footer p {
     margin: 0;
     padding-top: 6px;
     text-align: center;
