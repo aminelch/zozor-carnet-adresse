@@ -32,9 +32,9 @@ a {
 
 
 body {
-    font-family: "dayrom", serif;
+    font-family: "dayrom", "Segoe UI", sans-serif;
     background: url('../img/fond_jaune.png') top left repeat;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 h1 {
@@ -50,7 +50,7 @@ h1 {
     font-family: inherit;
     margin: 0;
     padding: 0 0 10px 0;
-    border-bottom: 2px solid #606262;
+    background: url('../img/separateur.png') repeat-x bottom;
 
     ::after {
         content: '';
@@ -151,7 +151,7 @@ h1 {
         background: #9b0e10;
         background: url(../img/fond_degraderouge.png) top left repeat;
         opacity: 0.7;
-        transition: color opacity .3s ease-in;
+        transition: color, opacity .3s ease-in;
 
         &:hover {
             opacity: 1;
@@ -224,12 +224,12 @@ h1 {
 /* Footer
    ========================================================================== */
 .footer {
-    display: grid;
+    display: grid; position: absolute;
     grid-template-columns: repeat(3, 1fr); //repeter 1fr pour les 3 cols 
     font-family: "dayrom", serif;
+    background: url("../img/separateur.png") top left repeat-x;
     margin-top: 0;
     grid-column: 3;
-
     h2 {
         text-transform: uppercase;
     }

@@ -1,1 +1,213 @@
-@font-face{font-family:dayrom;src:url("../fonts/dayrom.woff") format("woff2"),url("../fonts/dayrom.eot") format("eot"),url("../fonts/dayrom.ttf") format("truetype"),url("../fonts/dayrom.svg") format("svg")}@font-face{font-family:ballpark;src:url("../fonts/ballpark.woff") format("woff2"),url("../fonts/ballpark.eot") format("eot"),url("../fonts/ballpark.ttf") format("truetype"),url("../fonts/ballpark.svg") format("svg")}.clearfix::after{content:"";clear:both;display:table}*{box-sizing:border-box}a{color:#000;text-decoration:none;opacity:.9;transition:opacity .3s ease-in-out}a:hover{opacity:1;text-decoration:underline;color:#af5b4c}a .active{color:#af5b4c}body{font-family:"dayrom",serif;background:url("../img/fond_jaune.png") top left repeat;font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif}h1{text-transform:uppercase;margin:0}.mainHeader{font-family:inherit;margin:0;padding:0 0 10px 0;border-bottom:2px solid #606262}.mainHeader ::after{content:"";clear:both}.mainNav{float:right;padding:30px 20px 0 0}.mainNav ul{list-style:none}.mainNav ul li{display:inline;padding:20px 5px;text-transform:uppercase}.brand{float:left;font-family:"ballpark";font-size:20px;font-weight:bold}.brand a{text-decoration:none}.brand a:hover{color:#c00}.brand .brand__logo{height:60px;width:59px}.brand p{margin:0;font-size:18px;font-family:"ballpark"}.brand .brand__description{margin:-3px 0 0 0;font-family:"dayrom"}.banner{position:relative;background:url(../img/sanfrancisco.jpg) no-repeat center/cover;min-height:219px;width:auto}.banner .banner__description{position:absolute;margin:0;bottom:0;left:0;padding:10px;width:100%;color:rgba(255,255,255,.8);background-color:rgba(0,0,0,.5)}.banner .btn__highlighted{position:absolute;right:10px;bottom:4px;font-weight:bold;padding:8px;border:none;color:#fff;border-radius:2px;cursor:pointer;background:#9b0e10;background:url(../img/fond_degraderouge.png) top left repeat;opacity:.7;transition:color opacity .3s ease-in}.banner .btn__highlighted:hover{opacity:1;background:#530709cd}.site-content{margin-top:20px;padding:5px 10px;font-family:"dayrom",serif;width:100%;display:grid;grid-template-columns:66% 34%}.site-content .ico-epingle{padding-right:10px;margin:0}.site-content .left-col{padding:10px}.site-content .left-col p::first-line{margin-top:2px}.site-content .right-col{background:rgba(110,105,98,.5);padding-left:10px}.site-content .right-col h2{text-align:center}.site-content .right-col img{width:calc(100% - 50px);height:auto;padding:0 25%;display:inline-block}.site-content .right-col .social-icons{list-style:none;padding:0 25%}.site-content .right-col .social-icons li{display:inline-block;padding:0 5px}.site-content .right-col .social-icons li img{height:auto;width:41px}.footer{display:grid;grid-template-columns:repeat(3, 1fr);font-family:"dayrom",serif;margin-top:0;grid-column:3}.footer h2{text-transform:uppercase}.footer .last-tweets{list-style:none}.footer .pictures{font-size:16px}.footer .pictures ul{list-style-type:none}.footer .pictures ul li{display:inline-block;padding:5px}.footer .friends ul{list-style-image:url("../img/ico_liensexterne.png")}
+/* Imports
+   ========================================================================== */
+@font-face {
+  font-family: dayrom;
+  src: url("../fonts/dayrom.woff") format("woff2"), url("../fonts/dayrom.eot") format("eot"), url("../fonts/dayrom.ttf") format("truetype"), url("../fonts/dayrom.svg") format("svg");
+}
+@font-face {
+  font-family: ballpark;
+  src: url("../fonts/ballpark.woff") format("woff2"), url("../fonts/ballpark.eot") format("eot"), url("../fonts/ballpark.ttf") format("truetype"), url("../fonts/ballpark.svg") format("svg");
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Document
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.3s ease-in-out;
+}
+a:hover {
+  opacity: 1;
+  text-decoration: underline;
+  color: #af5b4c;
+}
+a .active {
+  color: #af5b4c;
+}
+
+body {
+  font-family: "dayrom", "Segoe UI", sans-serif;
+  background: url("../img/fond_jaune.png") top left repeat;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Header & Nav
+   ========================================================================== */
+.mainHeader {
+  font-family: inherit;
+  margin: 0;
+  padding: 0 0 10px 0;
+  background: url("../img/separateur.png") repeat-x bottom;
+}
+.mainHeader ::after {
+  content: "";
+  clear: both;
+}
+
+.mainNav {
+  float: right;
+  padding: 30px 20px 0 0;
+}
+.mainNav ul {
+  list-style: none;
+}
+.mainNav ul li {
+  display: inline;
+  padding: 20px 5px;
+  text-transform: uppercase;
+}
+
+.brand {
+  float: left;
+  font-family: "ballpark";
+  font-size: 20px;
+  font-weight: bold;
+}
+.brand a {
+  text-decoration: none;
+}
+.brand a:hover {
+  color: #cc0000;
+}
+.brand .brand__logo {
+  height: 60px;
+  width: 59px;
+}
+.brand p {
+  margin: 0;
+  font-size: 18px;
+  font-family: "ballpark";
+}
+.brand .brand__description {
+  margin: -3px 0 0 0;
+  font-family: "dayrom";
+}
+
+.banner {
+  position: relative;
+  background: url(../img/sanfrancisco.jpg) no-repeat center/cover;
+  min-height: 219px;
+  width: auto;
+}
+.banner .banner__description {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.banner .btn__highlighted {
+  position: absolute;
+  right: 10px;
+  bottom: 4px;
+  font-weight: bold;
+  padding: 8px;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  background: #9b0e10;
+  background: url(../img/fond_degraderouge.png) top left repeat;
+  opacity: 0.7;
+  transition: color, opacity 0.3s ease-in;
+}
+.banner .btn__highlighted:hover {
+  opacity: 1;
+  background: #530709cd;
+}
+
+/* Site Content
+   ========================================================================== */
+.site-content {
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-family: "dayrom", serif;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 66% 34%;
+}
+.site-content .ico-epingle {
+  padding-right: 10px;
+  margin: 0;
+}
+.site-content .left-col {
+  padding: 10px;
+}
+.site-content .left-col p::first-line {
+  margin-top: 2px;
+}
+.site-content .right-col {
+  background: rgba(110, 105, 98, 0.5);
+  padding-left: 10px;
+}
+.site-content .right-col h2 {
+  text-align: center;
+}
+.site-content .right-col img {
+  width: calc(100% - 50px);
+  height: auto;
+  padding: 0 25%;
+  display: inline-block;
+}
+.site-content .right-col .social-icons {
+  list-style: none;
+  padding: 0 25%;
+}
+.site-content .right-col .social-icons li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.site-content .right-col .social-icons li img {
+  height: auto;
+  width: 41px;
+}
+
+/* Footer
+   ========================================================================== */
+.footer {
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: "dayrom", serif;
+  background: url("../img/separateur.png") top left repeat-x;
+  margin-top: 0;
+  grid-column: 3;
+}
+.footer h2 {
+  text-transform: uppercase;
+}
+.footer .last-tweets {
+  list-style: none;
+}
+.footer .pictures {
+  font-size: 16px;
+}
+.footer .pictures ul {
+  list-style-type: none;
+}
+.footer .pictures ul li {
+  display: inline-block;
+  padding: 5px;
+}
+.footer .friends ul {
+  list-style-image: url("../img/ico_liensexterne.png");
+}
+
+/*# sourceMappingURL=app.css.map */
