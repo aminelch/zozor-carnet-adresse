@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'droid_sansregular';
+    src: url('fonts/DroidSans-webfont.eot');
+    src: url('fonts'/'DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/DroidSans-webfont.woff') format('woff'),
+        url('fonts/DroidSans-webfont.ttf') format('truetype'),
+        url('fonts/DroidSans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: url('img/greyzz.png') repeat top left;
+    color: black;
+    margin: 0;
+    padding: 8px;
+    font-family: 'droid_sansregular', sans-serif;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.title-big {
+    text-align: center;
+
+}
+
+.description {
+    text-align: center;
+    font-size: 18px;
+}
+
+header {
+    position: relative;
+}
+
+header figure {
+    /*position: absolute; */
+    float: right;
+
+    height: auto;
+}
+
+.highlighted {
+    font-weight: bold;
+}

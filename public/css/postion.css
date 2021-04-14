@@ -1,5 +1,9 @@
 /* GENERAL
    ========================================================================== */
+:root {
+    --container: 1000px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -81,7 +85,7 @@ a:hover {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: var(--container);
     width: calc(100% - 40px);
     margin-left: auto;
     margin-right: auto;
@@ -90,6 +94,16 @@ a:hover {
     /**padding: 10px 20px 0;**/
 }
 
+.black {
+    color: white;
+    background: black;
+}
+
+@media only screen and (max-width:900px) {
+    :root {
+        --container: 700px;
+    }
+}
 
 .alignleft {
     float: left;
